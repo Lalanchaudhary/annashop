@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top right, rgba(52, 211, 153, 0.14), transparent 18%),
+                linear-gradient(180deg, #020617 0%, #050814 100%);
+        }
+
+        main {
+            min-height: 100vh;
+        }
+
+        section,
+        .hero-panel,
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            border-color: rgba(148, 163, 184, 0.18);
+            backdrop-filter: blur(18px);
+        }
+
+        #poster {
+            min-height: 320px;
+            object-fit: cover;
+        }
+
+        input,
+        textarea {
+            background: rgba(15, 23, 42, 0.92);
+            border-color: rgba(148, 163, 184, 0.22);
+            color: #e2e8f0;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.14);
+            outline: none;
+        }
+
+        .primary-btn {
+            background: #22c55e;
+            color: #030712;
+        }
+
+        .primary-btn:hover {
+            background: #16a34a;
+        }
+
+        .secondary-btn {
+            border-color: rgba(148, 163, 184, 0.2);
+        }
+
+        .section-title {
+            color: #f8fafc;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-white antialiased">
+    <main class="max-w-4xl mx-auto px-4 py-4 md:py-8">
+
+        <!-- Poster -->
+        <a data-wa="" data-wa-text="Hi, I want details about your services." class="block"
+            href="https://Wa.link/myself"
+            target="_blank" rel="noopener">
+            <img  src="anna.png" alt="Jay Balaji Digital Poster"
+                class="w-full rounded-3xl border border-slate-800 shadow-2xl object-cover">
+        </a>
+
+        <!-- Hero -->
+        <section class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-10 text-center shadow-xl hero-panel">
+            <span
+                class="inline-flex rounded-full border border-green-500/30 bg-green-500/10 px-4 py-1 text-sm font-medium text-green-300">Trusted
+                Book Store Growth Partner</span>
+            <h1 class="mt-4 text-3xl md:text-5xl font-extrabold leading-tight">Grow Your Business with Smart Book
+                Store Solutions</h1>
+            <p class="mt-4 text-slate-300 text-base md:text-lg max-w-2xl mx-auto">We help bookstores generate quality
+                leads, improve online presence, and connect with customers faster through WhatsApp, promotions,
+                and business-focused campaigns.</p>
+
+            <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+                <a data-wa="" data-wa-text="Hi, I want to know more about your services."
+                    class="rounded-2xl bg-green-500 px-6 py-3 font-bold text-black cursor-pointer hover:bg-green-400 transition"
+                    href="https://Wa.link/myself"
+                    target="_blank" rel="noopener">Chat on WhatsApp</a>
+                <a href="#leadForm"
+                    class="rounded-2xl border border-slate-700 px-6 py-3 font-semibold hover:bg-slate-800 transition">Get
+                    Free Consultation</a>
+            </div>
+
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                <div class="rounded-2xl border border-slate-800 bg-slate-950/60 p-4">⚡ Fast Response</div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950/60 p-4">🎯 Quality Leads</div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950/60 p-4">🤝 Trusted Support</div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center">Our Services</h2>
+            <p class="mt-3 text-center text-slate-400 max-w-2xl mx-auto">We provide practical bookstore solutions designed
+                to help businesses attract customers and grow consistently.</p>
+
+            <div class="mt-6 grid md:grid-cols-3 gap-4">
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">
+                    <h3 class="text-lg font-bold">Lead Generation</h3>
+                    <p class="mt-2 text-sm text-slate-400">Get more customer enquiries through optimized campaigns and
+                        conversion-focused pages.</p>
+                </div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">
+                    <h3 class="text-lg font-bold">WhatsApp Marketing</h3>
+                    <p class="mt-2 text-sm text-slate-400">Connect instantly with your customers through direct WhatsApp
+                        communication and better engagement.</p>
+                </div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">
+                    <h3 class="text-lg font-bold">Business Promotion</h3>
+                    <p class="mt-2 text-sm text-slate-400">Improve brand visibility with targeted bookstore promotion
+                        strategies for better reach and results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center">Why Choose Us</h2>
+            <div class="mt-6 grid md:grid-cols-2 gap-4 text-slate-300">
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">✔ Fast and simple communication</div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">✔ Business-focused approach</div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">✔ Transparent support process</div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5">✔ Reliable help for customer enquiries
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust -->
+        <section
+            class="mt-6 rounded-3xl border border-slate-800 bg-gradient-to-r from-slate-900 to-slate-950 p-6 md:p-8 text-center">
+            <h2 class="text-2xl font-extrabold">Trusted by Growing Businesses</h2>
+            <p class="mt-3 text-slate-300">We focus on simple, responsive, and business-friendly support to help you
+                move faster.</p>
+            <p class="mt-4 text-green-400 font-semibold">Fast support • Better engagement • Direct communication</p>
+        </section>
+
+        <!-- Form -->
+        <section id="leadForm" class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center">Request a Free Consultation</h2>
+            <p class="mt-2 text-center text-slate-400">Fill in your details and continue on WhatsApp.</p>
+
+            <form id="contactForm" class="mt-6 space-y-4 max-w-2xl mx-auto">
+                <input name="name" type="text" placeholder="Your Name"
+                    class="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none focus:border-indigo-400"
+                    required="">
+                <input name="phone" type="tel" placeholder="Phone Number"
+                    class="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none focus:border-indigo-400"
+                    required="">
+                <textarea name="message" rows="4" placeholder="Tell us what you need"
+                    class="w-full rounded-2xl border border-slate-700 bg-slate-950 px-4 py-3 outline-none focus:border-indigo-400"></textarea>
+                <button type="submit"
+                    class="w-full rounded-2xl bg-green-500 px-5 py-3 font-bold text-black hover:bg-green-400 transition">Send
+                    on WhatsApp</button>
+            </form>
+        </section>
+
+        <!-- Contact -->
+        <section class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8 text-center">
+            <h2 class="text-2xl font-extrabold">Contact Information</h2>
+            <div class="mt-4 space-y-2 text-slate-300">
+                <p>📍 Nagpur, Maharashtra, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📧 support@jaybalajidigital.com</p>
+            </div>
+        </section>
+
+        <!-- Privacy & Terms -->
+        <section id="privacy" class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 text-sm text-slate-400">
+            <h2 class="text-lg font-bold text-white mb-2">Privacy Policy</h2>
+            <p>We collect basic information like your name and phone number only to respond to your enquiry and provide
+                relevant business information.</p>
+            <p class="mt-2">We do not sell or misuse your personal information. By using this website, you agree to our
+                privacy practices.</p>
+            <p class="mt-2">By submitting the form, you agree that we may contact you through WhatsApp, phone, or email
+                regarding your enquiry.</p>
+        </section>
+
+        <section id="terms" class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6 text-sm text-slate-400">
+            <h2 class="text-lg font-bold text-white mb-2">Terms &amp; Conditions</h2>
+            <p>This website is intended for business enquiry and lead generation purposes.</p>
+            <p class="mt-2">Services, timelines, and results may vary depending on business needs, market conditions,
+                and project scope.</p>
+            <p class="mt-2">All enquiries are subject to review and discussion before final service confirmation.</p>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a data-wa="" data-wa-text="Hi, I need assistance."
+        class="fixed bottom-5 right-5 z-50 rounded-full bg-green-500 px-5 py-3 font-bold text-black shadow-2xl cursor-pointer hover:bg-green-400 transition"
+        href="https://Wa.link/myself" target="_blank"
+        rel="noopener">WhatsApp</a>
+
+    <!-- <script>
+        const fallbackConfig = {
+            poster_src: 'poster.jpg',
+            whatsapp_number: '919876543210',
+            whatsapp_message: 'Hi, I want details about your services.',
+            whatsapp_link: ''
+        };
+
+        function buildWaLink(cfg, text) {
+            var link = (cfg.whatsapp_link || '').trim();
+            var num = (cfg.whatsapp_number || '').replace(/\D/g, '');
+            var msg = encodeURIComponent(text || cfg.whatsapp_message || 'Hi');
+
+            if (link) return link + (link.includes('?') ? '&' : '?') + 'text=' + msg;
+            if (num) return 'https://wa.me/' + num + (msg ? '?text=' + msg : '');
+            return '#';
+        }
+
+        function openWhatsAppLink(url) {
+            if (url && url !== '#') {
+                window.open(url, '_blank');
+            }
+            return false;
+        }
+
+        async function applyConfig() {
+            let cfg = { ...fallbackConfig };
+
+            try {
+                const res = await fetch('links.json?ts=' + Date.now());
+                if (res.ok) {
+                    const remoteCfg = await res.json();
+                    cfg = { ...cfg, ...remoteCfg };
+                }
+            } catch (e) {
+                console.warn('Using fallback config:', e);
+            }
+
+            const poster = document.getElementById('poster');
+            if (poster && cfg.poster_src) poster.src = cfg.poster_src;
+
+            document.querySelectorAll('[data-wa]').forEach(a => {
+                const t = a.getAttribute('data-wa-text') || cfg.whatsapp_message;
+                const waUrl = buildWaLink(cfg, t);
+                a.setAttribute('href', waUrl);
+                a.setAttribute('target', '_blank');
+                a.setAttribute('rel', 'noopener');
+                a.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openWhatsAppLink(waUrl);
+                });
+            });
+
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const fd = new FormData(form);
+                    const text = 'New enquiry:%0AName: ' + (fd.get('name') || '') + '%0APhone: ' + (fd.get('phone') || '') + '%0ARequest: ' + (fd.get('message') || '');
+                    const waUrl = buildWaLink(cfg, decodeURIComponent(text));
+                    openWhatsAppLink(waUrl);
+                    form.reset();
+                }, { passive: false });
+            }
+        }
+
+        applyConfig();
+    </script> -->
+
+
+
+
+
+</body>
+
+</html>
